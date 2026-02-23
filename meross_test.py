@@ -4,7 +4,7 @@ import asyncio
 
 EMAIL = "jose.alconchel@gmx.com"
 PASSWORD = "pa1pe2pi3"
-DEVICE_NAME = "Maratnz M-CR610"
+DEVICE_NAME = "Marantz M-CR610"
 
 async def prova_endoll():
     http_client = await MerossHttpClient.async_from_user_password(
