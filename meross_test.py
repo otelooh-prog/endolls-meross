@@ -18,6 +18,15 @@ async def prova_endoll():
 
     devices = manager.find_devices()
 
+for d in devices:
+    print("TROBAT:", d.name)
+
+target = None
+for d in devices:
+    if d.name == DEVICE_NAME:
+        target = d
+        break
+
     target = None
     for d in devices:
         if d.name == DEVICE_NAME:
